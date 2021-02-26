@@ -1,6 +1,8 @@
-require 'socket'
+# frozen_string_literal: true
 
-server = TCPServer.new('0.0.0.0', 8080)
+require "socket"
+
+server = TCPServer.new("0.0.0.0", 8080)
 
 loop do
   # When client connects, return a TCPSocket
